@@ -1,0 +1,54 @@
+/*ESTILOS PARA EL FORMULARIO*/
+.form {
+    background-color: rgb(236, 236, 236);
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 400px; /* Cambia este valor según tus necesidades */
+  }
+  /*
+  .form div {
+    width: calc(33.33% - 10px); 
+    margin-bottom: 1px;
+  }
+  */
+  .c1,.c2,.c3 {
+    display: flex; /* Utilizamos Flexbox para alinear los elementos */
+    justify-content: flex-end; /* Alineación a la derecha */
+    width: 100%; /* Opcional, ajusta el ancho del contenedor según tus necesidades */
+  }
+  
+  .c1 div,.c2 div,.c3 div {
+    margin-left: 1px; /* Agrega un espacio entre los inputs (ajusta según tu preferencia) */
+  }
+  
+  
+  
+  /* Estilos para el div con clase "tabla" */
+  .div.tabla {
+      width: 100%; /* Ajusta el ancho del div según tus necesidades */
+      overflow-x: auto; /* Agrega una barra de desplazamiento horizontal si es necesario */
+    }
+    
+    /* Estilos para la tabla */
+    table {
+      width: 30%;
+      border-collapse: collapse; /* Borra los bordes de las celdas */
+    }
+    
+    th, td {
+      border: 1px solid #ddd; /* Borde delgados en las celdas */
+      padding: 8px; /* Espacio interno en las celdas */
+      text-align: center; /* Alinea el texto al centro de las celdas */
+    }
+    
+    th {
+      background-color: rgb(236, 236, 236); /* Fondo gris claro para las celdas de encabezado */
+    }
+  
+    .colum-iz{
+      background-color: rgb(236, 236, 236);
+      font-weight: bold;
+    }
+    
