@@ -1,3 +1,16 @@
+.section-1 {
+  padding: 15px 15px;
+  overflow: auto; /* Para limpiar los floats */
+}
+
+.formulario, .tab-cant-enviar {
+  width: 50%; /* Ajusta el ancho según tus necesidades */
+  float: left;
+  text-align: center;
+}
+
+
+
 /*ESTILOS PARA EL FORMULARIO*/
 .form {
     background-color: rgb(236, 236, 236);
@@ -33,7 +46,7 @@
     
     /* Estilos para la tabla */
     table {
-      width: 30%;
+      width: 65%;
       border-collapse: collapse; /* Borra los bordes de las celdas */
     }
     
