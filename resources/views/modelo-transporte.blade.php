@@ -149,6 +149,11 @@
             <label for="">Funcion Objetivo (costo total)</label>
             <p id="funcion-objetivo"></p>
         </div>
+        <div>
+            <p>
+                prueba 
+            </p>
+        </div>
     </div>
 </section>
 
