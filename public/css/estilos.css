@@ -1,0 +1,70 @@
+.section-1 {
+  padding: 15px 15px;
+  overflow: auto;
+}
+
+.formulario, .tab-cant-enviar {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+
+
+/*ESTILOS PARA EL FORMULARIO*/
+.form {
+  background-color: rgb(230, 230, 230);
+  padding: 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 400px;
+  border-radius: 15px;
+  border: 1px solid #ffffff; 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Agregar sombra */
+}
+  /*
+  .form div {
+    width: calc(33.33% - 10px); 
+    margin-bottom: 1px;
+  }
+  */
+  .c1,.c2,.c3 {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  
+  .c1 div,.c2 div,.c3 div {
+    margin-left: 1px;
+  }
+  
+  
+  
+  /* Estilos para el div con clase "tabla" */
+  .div.tabla {
+      width: 100%;
+      overflow-x: auto;
+    }
+    
+    /* Estilos para la tabla */
+    table {
+      width: 80%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      border: 1px solid #ddd;
+      padding: 7px 0px; /* Espacio interno en las celdas */
+      text-align: center;
+    }
+    
+    th {
+      background-color: rgb(236, 236, 236);
+    }
+  
+    .colum-iz{
+      background-color: rgb(236, 236, 236);
+      font-weight: bold;
+    }
+    
