@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,3 +11,6 @@
     
 </body>
 </html>
+=======
+{!! $html_data !!}
+>>>>>>> 9d503683b1c2fb206124ea39eea2ed5727beffc3
