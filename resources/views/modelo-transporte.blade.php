@@ -6,7 +6,7 @@
 <script src="{{ asset('js/functions.js') }}"></script>
 
 <section class="section-1">
-    <div class="formulario">
+    <div class="formulario" style="display: flex; justify-content: center;">
         <div class="form">
             <div class="lavel">
                 <label for="">Almacen 1</label>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="col-md-2" style="width: calc(33.33% - 10px); margin-bottom: 1px;">
                     <label for="" class="form-label">Demanda</label>
-                    <input type="text" class="form-control" id="demandaC1A2" name="demandaC1A2" value="Cliente 1">
+                    <label for="" style="padding-top: 3px; background-color: #FAFAFA;">Cliente 1</label>
                 </div>
             </div>
             
@@ -86,7 +86,7 @@
                 </div>
                 <div class="col-md-2" style="width: calc(33.33% - 10px); margin-bottom: 1px;">
                     <label for="" class="form-label">Demanda</label>
-                    <input type="text" class="form-control" id="demandaC2A2" name="demandaC2A2" value="Cliente 2">
+                    <label for="" style="padding-top: 3px; background-color: #FAFAFA;">Cliente 2</label>
                 </div>
             </div>
             <div class="c3">
@@ -99,12 +99,12 @@
                 </div>
                 <div class="col-md-2" style="width: calc(33.33% - 10px); margin-bottom: 1px;">
                     <label for="" class="form-label">Demanda</label>
-                    <input type="text" class="form-control" id="demandaC3A2" name="demandaC3A2" value="Cliente 3">
+                    <label for="" style="padding-top: 3px; background-color: #FAFAFA;">Cliente 3</label>
                 </div>
             </div>
             
 
-            <div class="col-12">
+            <div class="col-12" style="padding-top: 10px;">
                 <button class="btn btn-primary" type="submit" id="calcular" name="calcular" onclick="Calcular()">Calcular</button>
             </div>
         </div>
