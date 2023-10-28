@@ -1,13 +1,13 @@
 <div style="padding: 15px 15px;">
-    <ul class="nav nav-underline">
+    <ul class="nav nav-underline" style="justify-content: center;">
         <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/">Inicio</a>
+            <a class="nav-link" style="font-weight: bold;" href="{{ route('inicio') }}">Inicio</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('modelo') }}">Modelo</a>
+            <a class="nav-link" style="font-weight: bold;" href="{{ route('modelo') }}">Modelo</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Acerca de Nosotros</a>
+            
         </li>
     </ul>
 </div>
