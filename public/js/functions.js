@@ -1,20 +1,48 @@
 function Calcular() {
     
 
-    
+    // OBTENER LOS VALORES INGRESADOS EN LOS INPUTS
+    var oferta_a1 = parseFloat(document.getElementById('ofertaA1').value);
+    var costo_a1c1 = parseFloat(document.getElementById('costoA1C1').value);
+    var demanda_c1 = parseFloat(document.getElementById('demandaC1A1').value);
+    var costo_a1c2 = parseFloat(document.getElementById('costoA1C2').value);
+    var demanda_c2 = parseFloat(document.getElementById('demandaC2A1').value);
+    var costo_a1c3 = parseFloat(document.getElementById('costoA1C3').value);
+    var demanda_c3 = parseFloat(document.getElementById('demandaC3A1').value);
+    var oferta_a2 = parseFloat(document.getElementById('ofertaA2').value);
+    var costo_a2c1 = parseFloat(document.getElementById('costoA2C1').value);
+    var costo_a2c2 = parseFloat(document.getElementById('costoA2C2').value);
+    var costo_a2c3 = parseFloat(document.getElementById('costoA2C3').value);
+   
+
+    //LLENAR DATOS DE LAS OFERTAS Y LAS DEMANDAS DE LOS CLIENTES
+    var columOfert1 = document.getElementById('Oferta-A1');
+    columOfert1.textContent = oferta_a1;
+
+    var columOfert2 = document.getElementById('Oferta-A2');
+    columOfert2.textContent = oferta_a2;
+
+    var columDemandaC1 = document.getElementById('Demanda-C1');
+    columDemandaC1.textContent = demanda_c1;
+
+    var columDemandaC2 = document.getElementById('Demanda-C2');
+    columDemandaC2.textContent = demanda_c2;
+
+    var columDemandaC3 = document.getElementById('Demanda-C3');
+    columDemandaC3.textContent = demanda_c3;
 
     sumOferta = 2;
     sumDemanda = 1;
     if (sumOferta >= sumDemanda) {
 
         const costosEnvioOriginal = [
-            [3, 4, 6],
-            [5, 3, 5]
+            [costo_a1c1, costo_a1c2, costo_a1c3],
+            [costo_a2c1, costo_a2c2, costo_a2c3]
         ];
 
         const costosEnvio = [
-            [3, 4, 6],
-            [5, 3, 5]
+            [costo_a1c1, costo_a1c2, costo_a1c3],
+            [costo_a2c1, costo_a2c2, costo_a2c3]
         ];
         
         const unidadesEnvio = [
@@ -23,11 +51,11 @@ function Calcular() {
         ];
         
         const ofertaAlmacenes = [
-            [160000],
-            [120000]
+            [oferta_a1],
+            [oferta_a2]
         ];
         
-        const demandaClientes = [80000, 70000, 90000];
+        const demandaClientes = [demanda_c1, demanda_c2, demanda_c3];
         
         // Función para encontrar la posición con el menor costo válido
         function encontrarPosicionMinima(costosEnvio) {
@@ -83,33 +111,18 @@ function Calcular() {
 
         document.getElementById('A1-C1').textContent = unidadesEnvio[0][0];
         document.getElementById('A1-C2').textContent = unidadesEnvio[0][1];
+        document.getElementById('A1-C3').textContent = unidadesEnvio[0][2];
+        document.getElementById('A2-C1').textContent = unidadesEnvio[1][0];
+        document.getElementById('A2-C2').textContent = unidadesEnvio[1][1];
+        document.getElementById('A2-C3').textContent = unidadesEnvio[1][2];
 
         //mostrar la funcion objetivo (costo minimo)
-        var viewFuncObjetivo = document.getElementById('funcion-objetivo');
+        document.getElementById('funcion-objetivo').textContent = costoTotal;
        
 
     } else {
         //mensaje de que no es posible ya que la oferta de los almacenes es menor que la demanda de los clientes
     }
     //CASILLAS A LLENAR (UNIDADES A ENVIAR)
-    
-
-  
-    var a1_c2 = parseFloat(document.getElementById('A1-C2').textContent);
-    var a1_c3 = parseFloat(document.getElementById('A1-C3').textContent);
-    var a2_c1 = parseFloat(document.getElementById('A2-C1').textContent);
-    var a2_c2 = parseFloat(document.getElementById('A2-C2').textContent);
-    var a2_c3 = parseFloat(document.getElementById('A2-C3').textContent);
-
 
 }
-
-
-
-/*
-
-function calcularFuncOfgetivo(almacen1_1, almacen1_2, almacen1_3, almacen2_1, almacen2_2, almacen2_3, costo1_1, costo1_2, costo1_3, costo2_1, costo2_2, costo2_3) {
-    funcObjetivo = ((almacen1_1*costo1_1)+(almacen1_2*costo1_2)+(almacen1_3*costo1_3)+(almacen2_1*costo2_1)+(almacen2_2*costo2_2)+(almacen2_3*costo2_3));
-    return funcObjetivo;
-}
-*/

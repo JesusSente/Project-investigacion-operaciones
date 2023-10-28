@@ -115,7 +115,7 @@
         <div class="tabla" style="padding: 20px 20px;">
             <table>
                 <tr>
-                    <th>Almacen</th>
+                    <th>Almacenes</th>
                     <th>1</th>
                     <th>2</th>
                     <th>3</th>
@@ -149,6 +149,7 @@
             <label for="">Funcion Objetivo (costo total)</label>
             <p id="funcion-objetivo"></p>
         </div>
+
     </div>
 </section>
 
