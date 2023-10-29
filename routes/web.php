@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,5 +21,3 @@ Route::get('/', function () {
 Route::get('/modelo-transporte', function () {
     return view('modelo-transporte');
 })->name('modelo');
-
-
